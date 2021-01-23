@@ -30,6 +30,7 @@
   --fill-icon: currentColor;
   --bg-lable-color: rgba(47, 48, 58, 0.8);
   --bg-directions-work-color: rgba(33, 150, 243, 0.9);
+  --button-shadow-mail: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 body {
@@ -584,10 +585,11 @@ p {
 .footer-list {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
-.footer-list > .link {
+/*.footer-list > .link {
   margin-right: 70px;
-}
+}*/
 
 .log-studio {
   margin-bottom: 20px;
@@ -655,7 +657,7 @@ p {
 .list-social {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
 }
 
 .list-social > .item:not(:last-child) {
@@ -669,6 +671,84 @@ p {
 .footer-icon {
   width: 20px;
   height: 20px;
+}
+
+/*Форма*/
+
+.form {
+  margin-right: auto;
+  margin-left: auto;  
+}
+
+.form-mail {  
+  display: flex;  
+  align-items: flex-end; 
+}
+
+.form-mail input {
+  outline: none;
+  width: 358px;
+  height: 50px;
+  margin-top: 20px;  
+  margin-right: 12px;
+  padding-left: 16px;
+  border: 1px solid var(--footer-text-color);
+  border-radius: 4px;
+  background: var(--background-footer-hero)
+}
+.form-mail input::placeholder{
+  
+  
+  font-size: 16px;
+  line-height: 1.25;  
+  color: var(--footer-text-color);
+}
+
+.text-mail {
+  font-size: 14px;
+  font-weight: bold;  
+  line-height: 1.14;
+  color: var(--white-text-color)
+}
+
+
+
+.button-mail {
+  width: 200px; 
+  height: 50px;
+  padding-right: 62px;
+  padding-left: 26px;
+
+
+  background: var(--accent-text-color);
+  box-shadow: var(--button-shadow-mail);
+  border-radius: 4px;  
+  border: none;
+  cursor: pointer;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--white-text-color);
+  
+}
+
+  
+  
+.form-mail .mail-block-button {
+  position: relative;
+}
+
+
+
+.icon-send {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
 }
 /* ПОРТФОЛИО */
 
