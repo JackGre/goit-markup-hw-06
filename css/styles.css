@@ -266,7 +266,7 @@ p {
   color: var(--white-text-color);
 }
 
-/*Модальное окно*/
+/*Модальное окно
 
 .backdrop {
   position: fixed;
@@ -279,7 +279,7 @@ p {
   background-color: rgba(0, 0, 0, 0.2);
   /*
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);*/
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -298,7 +298,7 @@ p {
   border-radius: 4px;
   /*transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);*/
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -321,7 +321,7 @@ p {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   outline: transparent;
-}
+}*/
 
 /* Преимущества(advantages) */
 
@@ -657,7 +657,7 @@ p {
 .list-social {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
 .list-social > .item:not(:last-child) {
@@ -677,52 +677,46 @@ p {
 
 .form {
   margin-right: auto;
-  margin-left: auto;  
+  margin-left: auto;
 }
 
-.form-mail {  
-  display: flex;  
-  align-items: flex-end; 
+.form-mail {
+  display: flex;
+  align-items: flex-end;
 }
 
 .form-mail input {
-  outline: none;
   width: 358px;
   height: 50px;
-  margin-top: 20px;  
+  margin-top: 20px;
   margin-right: 12px;
   padding-left: 16px;
   border: 1px solid var(--footer-text-color);
   border-radius: 4px;
-  background: var(--background-footer-hero)
+  background: var(--background-footer-hero);
 }
-.form-mail input::placeholder{
-  
-  
+.form-mail input::placeholder {
   font-size: 16px;
-  line-height: 1.25;  
+  line-height: 1.25;
   color: var(--footer-text-color);
 }
 
 .text-mail {
   font-size: 14px;
-  font-weight: bold;  
+  font-weight: bold;
   line-height: 1.14;
-  color: var(--white-text-color)
+  color: var(--white-text-color);
 }
 
-
-
 .button-mail {
-  width: 200px; 
+  width: 200px;
   height: 50px;
   padding-right: 62px;
   padding-left: 26px;
 
-
   background: var(--accent-text-color);
   box-shadow: var(--button-shadow-mail);
-  border-radius: 4px;  
+  border-radius: 4px;
   border: none;
   cursor: pointer;
 
@@ -731,16 +725,11 @@ p {
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--white-text-color);
-  
 }
 
-  
-  
 .form-mail .mail-block-button {
   position: relative;
 }
-
-
 
 .icon-send {
   width: 24px;
@@ -900,10 +889,114 @@ p {
 }
 
 .works-link:hover .produkt-actions,
-.works-link:focus .produkt-actions  {
+.works-link:focus .produkt-actions {
   transform: translatey(0);
 }
 
 /*.works-link:focus .produkt-actions {
   transform: translatey(0);
+}
+
+
+/*Модальное окно*/
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  /*
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);*/
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  position: absolute;
+  padding: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 528px;
+  min-height: 581px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  /*transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);*/
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 8px;
+  margin-right: 8px;
+  padding: 6px;
+
+  width: 30px;
+  height: 30px;
+
+  background-color: var(--white-text-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  outline: transparent;
+}
+
+.form-name {
+  /*position: relative;*/
+  display: flex;
+  flex-direction: column;
+}
+
+.form-name input {
+  outline: none;
+  height: 40px;
+  margin-top: 4px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-text {
+  margin-bottom: 12px;
+
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--main-text-color);
+}
+
+.lable-style {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: var(--secondary-text-color);
+}
+
+.form-name .form-input:focus {
+  border: 1px solid var(--accent-text-color);
+}
+
+.icon-name {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+}
+
+.form-input {
+  position: relative;
 }
