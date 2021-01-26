@@ -635,9 +635,11 @@ p {
 .form {
   margin-right: auto;
   margin-left: auto;
+  display: flex;
+  align-items: flex-end;
 }
 
-.form-mail {
+/*.form-mail {
   display: flex;
   align-items: flex-end;
 }
@@ -651,8 +653,24 @@ p {
   border: 1px solid var(--footer-text-color);
   border-radius: 4px;
   background: var(--background-footer-hero);
+}*/
+.form input {
+  width: 358px;
+  height: 50px;
+  margin-top: 20px;
+  margin-right: 12px;
+  padding-left: 16px;
+  border: 1px solid var(--footer-text-color);
+  border-radius: 4px;
+  background: var(--background-footer-hero);
 }
-.form-mail input::placeholder {
+
+/*.form-mail input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--footer-text-color);
+}*/
+.form input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: var(--footer-text-color);
@@ -684,7 +702,10 @@ p {
   color: var(--white-text-color);
 }
 
-.form-mail .mail-block-button {
+/*.form-mail .mail-block-button {
+  position: relative;
+}*/
+.form .mail-block-button {
   position: relative;
 }
 
