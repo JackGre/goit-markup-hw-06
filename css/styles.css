@@ -342,6 +342,7 @@ p {
 }
 .img-item {
   display: block;
+  width: 100%;
 }
 
 .work-img > .lable:not(:last-child) {
@@ -350,6 +351,7 @@ p {
 
 .lable {
   position: relative;
+  width: 370px;
 }
 
 .lable-text {
@@ -381,6 +383,7 @@ p {
 }
 
 .bloc-command {
+  width: 270px;
   background-color: var(--white-text-color);
   box-shadow: var(--box-shadow-bloc-command);
 }
@@ -395,6 +398,7 @@ p {
 
 .img-command {
   display: block;
+  width: 100%;
 }
 
 .bclock-employee {
@@ -798,6 +802,7 @@ p {
   margin-bottom: 30px;
 }
 .directions-work {
+  width: 370px;
   border: 1px solid var(--border-directions-work-color);
 }
 
@@ -815,6 +820,7 @@ p {
 
 .img-directions {
   display: block;
+  width: 100%;
 }
 
 .example {
